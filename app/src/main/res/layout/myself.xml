@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:background="#EBEBEB"
+              android:layout_height="match_parent"
+              tools:context="com.sina.weibo.sdk.demo.Test"
+              xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:background="@drawable/d33150d21ffd851bb5d0fe227815cf0b"
+        android:id="@+id/information_layout"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/myPicture"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/ic_logo"/>
+
+        <RelativeLayout
+            android:layout_centerVertical="true"
+            android:id="@+id/name_Layout"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/myPicture">
+
+            <TextView
+                android:id="@+id/myName"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="90dp"
+                android:gravity="center"
+                android:hint="昵称"
+                android:textSize="24dp"/>
+
+            <ImageButton
+                android:layout_marginTop="10dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignRight="@+id/myName"
+                android:src="@drawable/t20170409220736"/>
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/myInformation"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/name_Layout"
+            android:layout_marginBottom="18dp"
+            android:gravity="center"
+            android:hint="这家伙很懒，什么都没留下"/>
+    </RelativeLayout>
+
+
+    <com.sina.weibo.sdk.demo.LineItem
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/white"
+        app:rightimage="@drawable/right"
+        app:showView="true"
+        app:text="我的微博">
+    </com.sina.weibo.sdk.demo.LineItem>
+
+    <com.sina.weibo.sdk.demo.LineItem
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/white"
+        app:rightimage="@drawable/right"
+        app:text="我的主页">
+    </com.sina.weibo.sdk.demo.LineItem>
+
+    <com.sina.weibo.sdk.demo.LineItem
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/white"
+        app:rightimage="@drawable/right"
+        app:text="我的收藏">
+    </com.sina.weibo.sdk.demo.LineItem>
+
+
+</LinearLayout>
