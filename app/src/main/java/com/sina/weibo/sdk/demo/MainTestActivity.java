@@ -42,7 +42,7 @@ public class MainTestActivity extends AppCompatActivity {
                 .addTabItem(R.drawable.ic_logo, "首页", getResources().getColor(R.color.colorPrimary))
                 .addTabItem(R.drawable.ic_login_button_blue_normal, "我", getResources().getColor(R.color.colorAccent))
                 .setMode(TabLayoutMode.HIDE_TEXT | TabLayoutMode.CHANGE_BACKGROUND_COLOR)
-                .setDefaultColor(getResources().getColor(R.color.colorPrimary))
+                .setDefaultColor(getResources().getColor(R.color.black))
                 .build();
     }
 
